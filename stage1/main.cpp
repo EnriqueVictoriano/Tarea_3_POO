@@ -27,8 +27,10 @@ int main(int argc, char * argv[]) {
         fin >> junk >> junk >> zone;
         doors.push_back(new Door(zone));
     }
-    for (uint i=0; i<doors.size(); i++) { //uint : unsigned int
+    for (uint i=0; i<nDoors; i++) { //uint : unsigned int
         doors[i]->changeState();
         doors[i]->changeState();
     }
+    
+    return 0;
 }
