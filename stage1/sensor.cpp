@@ -6,7 +6,7 @@ Sensor::Sensor(int z, bool close){
     state = close;
 }
 bool Sensor::isClose() const {
-    return state;
+    return close;
 }
 int Sensor::getZone() const {
     return zone;
