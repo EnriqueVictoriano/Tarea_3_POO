@@ -1,10 +1,13 @@
 #include "door.h"
 
-Door::Door(int zone): magneticSensor(zone){
+Door::Door(){
 }
 
 Door::Door(MagneticSensor sensor):magneticSensor() {
     magneticSensor = sensor;
+}
+
+Door::Door(int zone): magneticSensor(zone){
 }
 void Door::changeState() {
         if (magneticSensor.isClose())
@@ -13,7 +16,3 @@ void Door::changeState() {
             magneticSensor.setSensorClose();
 }
 
-MagneticSensor Door::getSensor(){
-    return magneticSensor;
-    
-}
