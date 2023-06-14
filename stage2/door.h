@@ -8,6 +8,7 @@ private:
 public:
     Door(MagneticSensor sensor);
     void changeState();
+    MagneticSensor getSensor();
 private:
     MagneticSensor magneticSensor;
 };
