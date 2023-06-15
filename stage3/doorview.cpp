@@ -31,7 +31,7 @@ void DoorView::makeDoorView(){
     p.append(QPointF(180,0));
     switchPillar->setPolygon(p);
     switchPillar->setBrush(Qt::blue);
-    doorPanel = new QGraphicsRectItem(??, ??, ??, ??, this);
+    doorPanel = new QGraphicsRectItem(10, 20, 160, 10, this);
     doorPanel->setBrush(Qt::blue);
     doorPanel->setTransformOriginPoint(doorPanel->rect().left(), doorPanel->rect().bottom());
     addToGroup(origenPillar);
@@ -50,7 +50,7 @@ void DoorView::installMagneticSensor(MagneticSensorView & mv){
                                  switchPillar->boundingRect().height(),
                                  mv.getSwitchView().rect().width(),
                                  mv.getSwitchView().rect().height());
-    mv.getMagnetView().setTransformOriginPoint(??, ??);
+    mv.getMagnetView().setTransformOriginPoint(20, 10);
     addToGroup(&mv.getMagnetView());
     addToGroup(&mv.getSwitchView());
 }

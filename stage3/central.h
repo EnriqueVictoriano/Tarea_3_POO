@@ -13,6 +13,8 @@ public:
     explicit Central(QObject *parent = nullptr);
     void addNewSensor(Sensor * ps);
     ~Central();
+    void arm();
+    void disarm();
 private slots:
     void checkZones();
 private:

@@ -5,7 +5,7 @@ Door::Door()
 {
 
 }
-Door::Door(MagneticSensor * sensor, DoorView * v): magneticSensor(sensor), view(v) {
+Door::Door(MagneticSensor * sensor, DoorView * v): magneticSensor() {
     magneticSensor = sensor;
     isClose=true;
     view->setDoorModel(this);

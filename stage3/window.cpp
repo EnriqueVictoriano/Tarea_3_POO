@@ -1,12 +1,14 @@
 #include "window.h"
+#include "windowview.h"
 
-Window::window()
+Window::Window()
 {
 
 }
-Window::Window(MagneticSensor *sensor): magneticSensor() {
+Window::Window(MagneticSensor * sensor, WindowView * v): magneticSensor() {
     magneticSensor = sensor;
     isClose=true;
+    view->setWindowModel(this);
 }
 void Window::changeState() {
     if(magneticSensor->isClose()) {

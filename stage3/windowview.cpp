@@ -31,9 +31,9 @@ void WindowView::makeWindowView(){
     p.append(QPointF(180,0));
     switchPillar->setPolygon(p);
     switchPillar->setBrush(Qt::blue);
-    windowPanel = new QGraphicsRectItem(??, ??, ??, ??, this);
+    windowPanel = new QGraphicsRectItem(10, 20, 160, 10, this);
     windowPanel->setBrush(Qt::blue);
-    windowPanel->setTransformOriginPoint(doorPanel->rect().left(), doorPanel->rect().bottom());
+    windowPanel->setTransformOriginPoint(windowPanel->rect().left(), windowPanel->rect().bottom());
     addToGroup(origenPillar);
     addToGroup(switchPillar);
     addToGroup(windowPanel);
@@ -50,7 +50,7 @@ void WindowView::installMagneticSensor(MagneticSensorView & mv){
                                  switchPillar->boundingRect().height(),
                                  mv.getSwitchView().rect().width(),
                                  mv.getSwitchView().rect().height());
-    mv.getMagnetView().setTransformOriginPoint(??, ??);
+    mv.getMagnetView().setTransformOriginPoint(20, 10);
     addToGroup(&mv.getMagnetView());
     addToGroup(&mv.getSwitchView());
 }
