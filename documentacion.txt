@@ -1,0 +1,14 @@
+##dificultades
+
+--Dentro de las dificultades presentes en el primera etapa fue la de leer los datos de configuración 
+y generar las invocaciones de puertas correctamente.la solucion presente para este caso fue la de 
+asegurarse de comprender el formato de los datos de configuración y utilizar las estructuras de datos adecuadas para almacenar la información
+ademas de extraer los datos necesarios y generar las invocaciones de puertas.
+
+--Una de las dificultades a la cual nos vimos enfretados en la etapa dos fue la de verificar el estado de las zonas y mostrar el mensaje 
+adecuado en la consola y la solucion para esto fue implementar la lógica de verificación de todas las zonas en la central. 
+Recorrer las puertas y ventanas para determinar si alguna zona está abierta y en base al resultado, imprimir el mensaje correspondiente en la consola.
+
+--El principal problema para la etapa 3 fue Implementar la programación conducida por eventos y actualizar las vistas de puertas y ventanas al interactuar
+con el mouse, la solucion para esto fue utilizar los eventos del mouse para detectar cuándo se presiona y se suelta el botón izquierdo sobre las puertas y ventanas. 
+Actualizar las vistas correspondientes en respuesta a estos eventos, reflejando el estado actualizado de cada elemento.
